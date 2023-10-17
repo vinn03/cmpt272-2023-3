@@ -11,7 +11,7 @@
             border: 1px solid black;
         }
     </style>
-    <script type="text/javascript" src="./js/script1.js"></script>
+    <script type="text/javascript" src="./js/script1.js" defer></script>
 </head>
 <body>
     <header>
@@ -91,15 +91,29 @@
                 <input type="color"> <br>
                 <input type="password"> <br>
                 <input type="email"> <br>
-                <input list="langs">
+                <input type="text" list="langs">
                 <datalist id="langs">
                     <option value="JS">JS</option>
                     <option value="HTML">HTML</option>
                     <option value="CSS">CSS</option>
                 </datalist> <br>
-                <input type="submit" value="SuBmIt">
+                <div class="loc">
+                    <label for="city">CITY:</label><br />
+                    <select id="city" name="city[]" size="4" aria-placeholder="City" multiple>
+                      <option value="Vancouver" selected>VANC</option>
+                      <option value="Burnaby">BURN</option>
+                      <option value="Surrey">SUR</option>
+                    </select>
+                </div>
+                <div>
+                    Bobby <input name="person" type="radio"> <br>
+                    Jane <input name="person" type="radio"> <br>
+                </div>
+                <input id="sub" type="submit" value="SuBmIt">
             </fieldset>
         </form>
+        <button>CLICK ME!</button>
+        <div id="output"></div>
     </main>
     <footer>
         links

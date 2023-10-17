@@ -10,6 +10,14 @@ header {
     font-size: 1.5em;
 } */
 
+input, select {
+    width: 400px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
 /* attributes */
 
 [alt ~= 'baby'] {
